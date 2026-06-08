@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaludYa - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <h2 class="text-white">SaludYa</h2>
+        <button id="logoutBtn" class="btn btn-secondary">Cerrar Sesión</button>
+    </nav>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <ul>
+                <li class="active">Mis Citas</li>
+                <li>Agendar Nueva Cita</li>
+                <li>Historial</li>
+            </ul>
+        </aside>
+        <main class="main-content">
+            <h2>Horarios Disponibles - Medicina General</h2>
+            <div class="agenda-grid" id="agendaGrid">
+                </div>
+            
+            <div id="confirmationMessage" class="hidden alert-success">
+                ✅ ¡Cita confirmada exitosamente! Recibirás un correo pronto.
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
